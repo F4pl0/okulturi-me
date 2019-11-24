@@ -1,5 +1,47 @@
-html, body {
+*,
+html,
+body {
   padding: 0px;
   margin: 0px;
+  font-size: 62.5%;
+}
+
+.navi {
+  font-size: 3rem;
+  padding: 2rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.navi span {
+  color: red;
+  font-size: 2rem;
+}
+
+.navi ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navi ul li {
+  padding: 0 1rem;
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */

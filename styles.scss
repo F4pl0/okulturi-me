@@ -1,4 +1,35 @@
-html, body{
+$color-primary: #ce1919;
+$color-secondary: #c74040;
+
+*,
+html,
+body {
     padding: 0px;
     margin: 0px;
+
+    font-size: 62.5%;
+}
+
+.navi {
+    font-size: 3rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    color: black;
+    span {
+        color: red;
+        font-size: 2rem;
+    }
+    p {
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            padding: 0 1rem;
+            list-style-type: none;
+        }
+    }
 }

@@ -1,4 +1,29 @@
-.home-view h1 {
-  color: blue;
+.home-view {
+  position: absolute;
+  left: 9rem;
+  bottom: 14rem;
+  font-family: "Helvetica Neue LT Std";
+  display: inline-block;
+}
+
+.home-view_heading {
+  color: #ce1919;
+  font-size: 9rem;
+}
+
+.home-view_subheading {
+  color: #c74040;
+  font-size: 3rem;
+}
+
+.home-view p {
+  font-size: 1.6rem;
+  color: #c74040;
+}
+
+.home-view hr {
+  background-color: #ce1919;
+  width: 8rem;
+  margin: 1.5rem 0;
 }
 /*# sourceMappingURL=home.css.map */

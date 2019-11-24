@@ -1,5 +1,28 @@
-.home-view{
-    h1{
-        color: blue;
+$color-primary: #ce1919;
+$color-secondary: #c74040;
+
+.home-view {
+    position: absolute;
+    left: 9rem;
+    bottom: 14rem;
+    //border: 2px solid red;
+    font-family: "Helvetica Neue LT Std";
+    display: inline-block;
+    &_heading {
+        color: $color-primary;
+        font-size: 9rem;
+    }
+    &_subheading {
+        color: $color-secondary;
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.6rem;
+        color: $color-secondary;
+    }
+    hr {
+        background-color: $color-primary;
+        width: 8rem;
+        margin: 1.5rem 0;
     }
 }
