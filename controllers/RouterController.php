@@ -29,8 +29,9 @@ class RouterController extends Controller
 		
 		// Odvoji se backend API
 		if ($parsedUrl[0] == "api") {
-			if(file_exists("api/".$this->dashesToCamel($parsedUrl[1]).".php")){
-				require("api/" . $this->dashesToCamel($parsedUrl[1]) .".php");
+			if(file_exists("api/".$this->dashesToCamel($parsedUrl[1])."/".$this->dashesToCamel($parsedUrl[2]).".php")){
+				require("api/".$this->dashesToCamel($parsedUrl[1])."/".$this->dashesToCamel($parsedUrl[2]).".php");
+
 			} else {
 				header("HTTP/1.0 404 Not Found");
 			}
