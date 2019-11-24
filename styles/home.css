@@ -2,12 +2,12 @@
   position: absolute;
   left: 9rem;
   bottom: 14rem;
-  font-family: "Helvetica Neue LT Std";
+  font-family: Roboto;
   display: inline-block;
 }
 
 .home-view_heading {
-  color: #ce1919;
+  color: black;
   font-size: 9rem;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .home-view hr {
-  background-color: #ce1919;
+  color: #ce1919;
   width: 8rem;
   margin: 1.5rem 0;
 }

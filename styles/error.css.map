@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AACI,WADO,CACP,EAAE,CAAA;EACE,KAAK,EAAE,GAAG;CACb",
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,MAAM;CAMrB;;AALI,AAAD,mBAAS,CAAC;EACN,UAAU,EAAE,KAAK;EACjB,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;CAClB",
     "sources": [
         "error.scss"
     ],

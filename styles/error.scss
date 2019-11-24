@@ -1,5 +1,8 @@
-.error-view{
-    h1{
-        color: red;
+.error-view {
+    text-align: center;
+    &_heading {
+        margin-top: 30rem;
+        font-family: Roboto;
+        font-size: 5rem;
     }
 }
