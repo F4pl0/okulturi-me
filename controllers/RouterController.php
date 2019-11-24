@@ -25,7 +25,17 @@ class RouterController extends Controller
 		$parsedUrl = $this->parseUrl($params[0]);
 
 		if (empty($parsedUrl[0]))
-			$this->redirect('article/home');
+			$this->redirect('home');
+		
+		// Odvoji se backend API
+		if ($parsedUrl[0] == "api") {
+			if(file_exists("api/".$this->dashesToCamel($parsedUrl[1]).".php")){
+				require("api/" . $this->dashesToCamel($parsedUrl[1]) .".php");
+			} else {
+				header("HTTP/1.0 404 Not Found");
+			}
+			return;
+		}
 
 		$controllerClass = $this->dashesToCamel(array_shift($parsedUrl)) . 'Controller';
 
