@@ -1,4 +1,98 @@
-.login-view h1 {
-  color: turquoise;
+.login-view {
+  text-align: center;
+}
+
+.login-view_heading {
+  font-family: roboto;
+}
+
+.login-view_heading h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.login-view_heading p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.login-view_body {
+  border: 2 px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.login-view_body-left {
+  padding: 8rem;
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+.login-view_body-right {
+  padding: 3rem 11rem;
+  width: 50%;
+}
+
+.login-view_form {
+  padding: 2rem 6rem;
+  border: 1px solid black;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+}
+
+.login-view_form a {
+  font-size: 1.6rem;
+  padding: 2rem 0rem;
+}
+
+.login-view .button {
+  font-size: 2rem;
+}
+
+.login-view_events {
+  border: 1px solid black;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 1rem;
+}
+
+.login-view_events .card-image {
+  background-color: lightblue;
+  width: 10rem;
+}
+
+.login-view_events .card {
+  border-radius: 0 1rem 1rem 0;
+  width: 85%;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+}
+
+.login-view_events .card-content {
+  text-align: left;
+}
+
+.login-view_events .card-content h3 {
+  font-size: 1.5rem;
+}
+
+.login-view_events .card-content p {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=login.css.map */
