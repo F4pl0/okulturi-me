@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=profile.css.map */
+.profile-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile-view_div {
+  margin-top: 10rem;
+  border: 2px solid black;
+  padding: 5rem 6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.profile-view_div-line {
+  border: 1px solid #707070;
+  margin: 3rem 0;
+  width: 95%;
+}
+
+.profile-view_div-button {
+  font-size: 1rem;
+}
+
+.profile-view_div-heading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.profile-view_div-name {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=profile.css.map */
