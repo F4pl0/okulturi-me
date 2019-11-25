@@ -71,4 +71,32 @@
   border: 1px solid black;
   padding: 2px 2.5rem;
 }
+
+@media only screen and (max-width: 420px) {
+  .login-view {
+    padding: 0 1rem;
+  }
+  .login-view_heading h2 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+  }
+  .login-view_heading p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .login-view_body {
+    border: none;
+    padding: 2rem 0;
+  }
+  .login-view_body-heading {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .login-view_body-subheading {
+    font-size: 1rem;
+  }
+  .login-view_form {
+    padding: 2rem 3rem;
+  }
+}
 /*# sourceMappingURL=login.css.map */

@@ -55,3 +55,32 @@
         padding: 2px 2.5rem;
     }
 }
+@media only screen and (max-width: 420px) {
+    .login-view {
+        padding: 0 1rem;
+        &_heading {
+            h2 {
+                font-size: 1.5rem;
+                padding-top: 2rem;
+            }
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+        &_body {
+            border: none;
+            padding: 2rem 0;
+            &-heading {
+                font-size: 2rem;
+                padding-bottom: 1rem;
+            }
+            &-subheading {
+                font-size: 1rem;
+            }
+        }
+        &_form {
+            padding: 2rem 3rem;
+        }
+    }
+}
