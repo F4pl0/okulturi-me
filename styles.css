@@ -1,9 +1,25 @@
+@media only screen and (max-width: 480px) {
+  .is-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .is-mobile {
+    display: none;
+  }
+}
+
 *,
 html,
 body {
   padding: 0px;
   margin: 0px;
   font-size: 62.5%;
+}
+
+.darkmode--activated p, .darkmode--activated li, .darkmode-toggle {
+  font-size: 16px !important;
 }
 
 .navi {
