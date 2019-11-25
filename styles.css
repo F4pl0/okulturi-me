@@ -8,8 +8,8 @@ body {
 
 .navi {
   font-family: Roboto;
-  font-size: 4rem;
-  padding: 2rem 4rem;
+  font-size: 2.5rem;
+  padding: 1rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +28,7 @@ body {
 
 .navi span {
   color: red;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .navi ul {

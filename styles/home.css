@@ -1,29 +1,29 @@
 .home-view {
   position: absolute;
-  left: 9rem;
-  bottom: 14rem;
+  left: 4rem;
+  bottom: 7rem;
   font-family: Roboto;
   display: inline-block;
 }
 
 .home-view_heading {
   color: black;
-  font-size: 9rem;
+  font-size: 4.5rem;
 }
 
 .home-view_subheading {
   color: #c74040;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .home-view p {
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   color: #c74040;
 }
 
 .home-view hr {
   color: #ce1919;
-  width: 8rem;
+  width: 4rem;
   margin: 1.5rem 0;
 }
 /*# sourceMappingURL=home.css.map */

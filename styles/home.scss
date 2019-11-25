@@ -3,26 +3,26 @@ $color-secondary: #c74040;
 
 .home-view {
     position: absolute;
-    left: 9rem;
-    bottom: 14rem;
+    left: 4rem;
+    bottom: 7rem;
     font-family: Roboto;
     //border: 2px solid red;
     display: inline-block;
     &_heading {
         color: black;
-        font-size: 9rem;
+        font-size: 4.5rem;
     }
     &_subheading {
         color: $color-secondary;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
     p {
-        font-size: 1.6rem;
+        font-size: 0.8rem;
         color: $color-secondary;
     }
     hr {
         color: $color-primary;
-        width: 8rem;
+        width: 4rem;
         margin: 1.5rem 0;
     }
 }
