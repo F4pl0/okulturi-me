@@ -1,25 +1,32 @@
 <link rel="stylesheet" href="styles/moja-desavanja.css"/>
+<script src="scripts/moja-desavanja.js"></script>
 <div class="moja-desavanja-view">
 <div class="moja-desavanja-view_sections">
         <div class="moja-desavanja-view_card-div">
             <h2>Moja Desavanja</h2>
 
+        <?php 
+        $desavanja = json_decode(DesavanjeModel::getMy());
+        foreach ($desavanja as $desavanje) {
+            $date = getdate( strtotime( $desavanje->Datetime ) );
+        ?>
 
-        <!--Ovo se Replicira-->
             <div class="card">
                 <div class="card-img">
-                    <h2 class="card-img_text">16. <br>
-                JUL</h2>
+                    <h2 class="card-img_text"><?php echo $date['mday'];?> <br>
+                    <?php echo $date['month'];?></h2>
                 </div>
                 <div class="card-text">
                     <div>
-                        <h3>Skroz Super Naslov</h3>
-                        <p>Deskripcija</p>
+                        <h3><?php echo $desavanje->Ime;?></h3>
+                        <p><?php echo $desavanje->Opis;?></p>
                     </div>
-                    <a > &#10005;</a>
                 </div>
+                    <a style="color: black; font-size: 16px; float: right; cursor: pointer; margin-right: 8px; margin-top: 8px;"
+                        onClick="brisi(<?php echo $desavanje->ID; ?>)"> &#10005;</a>
             </div>
-<!--Ovo se Replicira-->
+
+            <?php } ?>
 
         </div>
     </div>
