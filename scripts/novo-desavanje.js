@@ -44,9 +44,9 @@ $("#submit-btn").click(function(){
     var request = new XMLHttpRequest();
     request.open("POST", "api/desavanje/create");
     request.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
             document.location.href = "content";
-        } else if (xhr.readyState === XMLHttpRequest.DONE && xhr.status !== 200) {
+        } else if (request.readyState === XMLHttpRequest.DONE && request.status !== 200) {
             alert("Doslo je do greske");
         }
     };
