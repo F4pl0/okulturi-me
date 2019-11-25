@@ -33,7 +33,7 @@
 }
 
 .login-view_body-heading {
-  font-size: 2rem;
+  font-size: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -44,7 +44,7 @@
 
 .login-view_form {
   padding: 4rem 6rem;
-  border: 1px solid black;
+  border: 1px solid #707070;
   -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
           box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
   -ms-flex-item-align: center;
