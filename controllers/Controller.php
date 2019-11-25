@@ -10,6 +10,7 @@ abstract class Controller
     
     public function renderView()
     {
+		require("helpers/session.php");
         if ($this->view)
         {
             extract($this->data);

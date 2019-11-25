@@ -18,8 +18,14 @@
 			<ul>
 				<li><a href="/home"> Home </a></li>
 				<li><a > Kultura </a></li>
+				<?php if( !$loggedIn ){ ?>
 				<li><a href="/login"> Login </a></li>
 				<li><a href="/register"> Registracija </a></li>
+				<?php } else { ?>
+				<li><a href="/novo-desavanje"> Novo Desavanje </a></li>
+				<li><a href="/moja-desavanje"> Moja Desavanja </a></li>
+				<li><a href="/api/user/logout"> Logout </a></li>
+				<?php } ?>
 			</ul>
 		</div>
 		<?php $this->controller->renderView();?>
@@ -30,8 +36,14 @@
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="/home"> Home </a>
 			<a> Kultura </a>
+			<?php if( !$loggedIn ){ ?>
 			<a href="/login"> Login </a>
 			<a href="/register"> Registracija </a>
+			<?php } else { ?>
+			<a href="/novo-desavanje"> Novo Desavanje </a>
+			<a href="/moja-desavanje"> Moja Desavanja </a>
+			<a href="/api/user/logout"> Logout </a>
+			<?php } ?>
 		</div>
 
 		<div id="main">

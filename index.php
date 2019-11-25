@@ -5,6 +5,8 @@ mb_internal_encoding("UTF-8");
 
 function autoloadFunction($class)
 {
+    require('helpers/session.php');
+    
     if (preg_match('/Controller$/', $class))	
         require("controllers/" . $class . ".php");
     else
