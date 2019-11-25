@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=novo-desavanje.css.map */
+.novo-desavanje-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.novo-desavanje-view .novo-desavanje_div {
+  margin-top: 10rem;
+  border: 2px solid black;
+  padding: 3rem 6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.novo-desavanje-view .novo-desavanje_div-line {
+  border: 1px solid #707070;
+  margin: 3rem 0;
+  width: 95%;
+}
+
+.novo-desavanje-view .novo-desavanje_div-button {
+  font-size: 1rem;
+}
+
+.novo-desavanje-view .novo-desavanje_div-heading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.novo-desavanje-view .novo-desavanje_div-name {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=novo-desavanje.css.map */

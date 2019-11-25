@@ -1,3 +1,28 @@
-.novo-desavanje-view{
-    
+.novo-desavanje-view {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .novo-desavanje {
+        &_div {
+            margin-top: 10rem;
+            border: 2px solid black;
+            padding: 3rem 6rem;
+            align-self: center;
+            &-line {
+                border: 1px solid #707070;
+                margin: 3rem 0;
+                width: 95%;
+            }
+            &-button {
+                font-size: 1rem;
+            }
+            &-heading {
+                font-size: 2rem;
+                padding-bottom: 2rem;
+            }
+            &-name {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
