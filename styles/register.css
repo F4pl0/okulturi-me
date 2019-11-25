@@ -1,4 +1,107 @@
-.register-view h1 {
-  color: green;
+.register-view {
+  text-align: center;
+}
+
+.register-view_heading {
+  font-family: roboto;
+}
+
+.register-view_heading h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.register-view_heading p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.register-view_body {
+  padding: 4rem 0;
+  border: 2 px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-view_body-heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+.register-view_body-subheading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.register-view_form {
+  padding: 4rem 6rem;
+  border: 1px solid #707070;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 50rem;
+}
+
+.register-view_form-button {
+  margin: 2rem 0;
+}
+
+.register-view_form a {
+  font-size: 0.8rem;
+  padding: 2rem 0rem;
+  margin: 2rem 0;
+}
+
+.register-view .button {
+  cursor: pointer !important;
+  font-size: 1rem;
+  border-radius: 20px;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 2.5rem;
+}
+
+.register-view .button:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .register-view_body {
+    width: 100%;
+  }
+  .register-view_body-heading {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .register-view_body-subheading {
+    font-size: 1rem;
+  }
+  .input-field label {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .register-view_body-heading {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .register-view_body-subheading {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=register.css.map */
