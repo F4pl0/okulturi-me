@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/novo-desavanje.css" />
+<script src="scripts/novo-desavanje.js"></script>
 <div class="novo-desavanje-view">
     <div class="novo-desavanje_div">
         <form action="">
@@ -6,33 +7,36 @@
         
 
         <label>Browser Select</label>
-  <select class="browser-default">
+  <select id="kategorijaField" class="browser-default">
     <option  value="" disabled selected>Tip Dogadjaja</option>
     <option value="1">Muzicki Nastup</option>
     <option value="2">Likovne Umetnosti</option>
     <option value="3">Filmske Projekcija</option>
     <option value="4">Pozorizorisne Predstave</option>
-    <option value="5"> Ostalo</option>
+    <option value="0"> Ostalo</option>
   </select>
 
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Naziv dogadjaja</label>
+    <input id="imeField" type="text" class="validate">
+    <label for="imeField">Naziv dogadjaja</label>
 
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Mesto odrzavanja</label>
+    <input id="opisField" type="text" class="validate">
+    <label for="opisField">Opis</label>
 
-                        <input id="email" type="date" class="validate">
-                        <label for="email">Datum odrzavanja</label>
-                        <br>
-    
-    <a class="novo-desavanje_div-button" href="#">Postavi sliku dogadjaja</a>
+    <input id="datumField" type="date" class="validate">
+    <label for="datumField">Datum odrzavanja</label>
     <br>
-    <a class="novo-desavanje_div-button" href="#">Postavi Dogadjaj</a>
+    <input id="slikaField" style="display: none;" type="file" accept="image/*"/>
+    <a id="slika-select-btn" style="cursor: pointer;" class="novo-desavanje_div-button" >Postavi sliku dogadjaja</a>
+    <br>
+    <a id="submit-btn" style="cursor: pointer;" class="novo-desavanje_div-button" >Postavi Dogadjaj</a>
     </form>
 
     <script>
+    /*
         $(document).ready(function(){
-    $('select').formSelect();
+          $('select').formSelect();
+        });
+        */
     </script>
 </div>
 </div>
