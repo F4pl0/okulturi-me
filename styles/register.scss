@@ -1,5 +1,95 @@
 .register-view {
-    h1 {
-        color: green;
+    text-align: center;
+    &_heading {
+        font-family: roboto;
+        h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin: 0;
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &_body {
+        padding: 4rem 0;
+        border: 2 px solid red;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        &-heading {
+            font-size: 4rem;
+            padding-bottom: 2rem;
+        }
+        &-subheading {
+            font-size: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &_form {
+        padding: 4rem 6rem;
+        border: 1px solid #707070;
+        box-shadow: 4px 5px 6px -1px rgba(gray, 0.75);
+        align-self: center;
+        max-width: 50rem;
+
+        &-button {
+            margin: 2rem 0;
+        }
+
+        a {
+            font-size: 0.8rem;
+            padding: 2rem 0rem;
+            margin: 2rem 0;
+        }
+    }
+
+    .button {
+        cursor: pointer !important;
+        font-size: 1rem;
+        border-radius: 20px;
+        color: black;
+        border: 1px solid black;
+        padding: 1rem 2.5rem;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .register-view {
+        &_body {
+            width: 100%;
+            &-heading {
+                font-size: 2rem;
+                padding-bottom: 1rem;
+            }
+            &-subheading {
+                font-size: 1rem;
+            }
+        }
+    }
+    .input-field {
+        label {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .register-view_body {
+        &-heading {
+            font-size: 2rem;
+            padding-bottom: 1rem;
+        }
+        &-subheading {
+            font-size: 1rem;
+        }
     }
 }

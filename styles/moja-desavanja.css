@@ -91,11 +91,6 @@
   margin: 5px 0px;
 }
 
-.moja-desavanja-view .card-text a {
-  text-decoration: none;
-  color: black;
-}
-
 .moja-desavanja-view .card-info {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -107,5 +102,15 @@
 .moja-desavanja-view .card-info p {
   padding: 0px 5px;
   font-size: 10px;
+}
+
+@media only screen and (max-width: 540px) {
+  .moja-desavanja-view_card-div {
+    border: none;
+    width: 100%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=moja-desavanja.css.map */
