@@ -35,4 +35,16 @@
 .novo-desavanje-view .novo-desavanje_div-name {
   font-size: 1.5rem;
 }
+
+label {
+  font-size: 1rem;
+}
+
+.browser-default {
+  font-size: 1rem;
+}
+
+.browser-default option {
+  font-size: 1rem;
+}
 /*# sourceMappingURL=novo-desavanje.css.map */

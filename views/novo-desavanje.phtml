@@ -3,26 +3,36 @@
     <div class="novo-desavanje_div">
         <form action="">
         <h1 class="novo-desavanje_div-heading">KREIRAJ SVOJ DOGADJAJ</h1>
-        <div class="input-field">
-                        <input id="email" type="text" class="validate">
-                        <label for="email">Tip Dogadjaja</label>
-                    </div>
-                    <div class="input-field">
+        
+
+        <label>Browser Select</label>
+  <select class="browser-default">
+    <option  value="" disabled selected>Tip Dogadjaja</option>
+    <option value="1">Muzicki Nastup</option>
+    <option value="2">Likovne Umetnosti</option>
+    <option value="3">Filmske Projekcija</option>
+    <option value="4">Pozorizorisne Predstave</option>
+    <option value="5"> Ostalo</option>
+  </select>
+
                         <input id="email" type="text" class="validate">
                         <label for="email">Naziv dogadjaja</label>
-                    </div>
-                    <div class="input-field">
+
                         <input id="email" type="text" class="validate">
                         <label for="email">Mesto odrzavanja</label>
-                    </div>
-                    <div class="input-field">
+
                         <input id="email" type="date" class="validate">
                         <label for="email">Datum odrzavanja</label>
-                    </div>
+                        <br>
     
     <a class="novo-desavanje_div-button" href="#">Postavi sliku dogadjaja</a>
     <br>
     <a class="novo-desavanje_div-button" href="#">Postavi Dogadjaj</a>
     </form>
+
+    <script>
+        $(document).ready(function(){
+    $('select').formSelect();
+    </script>
 </div>
 </div>
