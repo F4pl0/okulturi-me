@@ -2,8 +2,8 @@
 <div class="profile-view"> 
     <div class="profile-view_div">
         <h1 class="profile-view_div-heading">TVOJ PROFIL</h1>
-    <h2 class="profile-view_div-name"> IME I PREZIME: Ivan Jovanovski </h2>
-    <h2 class="profile-view_div-name"> TVOJ MAIL: justekko95@gmail.com</h2>
+    <h2 class="profile-view_div-name"> IME I PREZIME: <?php echo $_SESSION['ImePrezime'];?> </h2>
+    <h2 class="profile-view_div-name"> TVOJ MAIL: <?php echo $_SESSION['Email'];?></h2>
     <hr class="profile-view_div-line">
     <a class="profile-view_div-button" href="#">Promeni Ime</a>
     <br>
