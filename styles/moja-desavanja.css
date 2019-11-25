@@ -1,1 +1,111 @@
-/* No CSS *//*# sourceMappingURL=moja-desavanja.css.map */
+.moja-desavanja-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.moja-desavanja-view_card-div {
+  margin-top: 2rem;
+  border: 1px solid #707070;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+  padding: 2rem 4rem;
+  max-width: 70rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moja-desavanja-view .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7rem;
+  width: 400px;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+}
+
+.moja-desavanja-view .card-img {
+  text-align: center;
+  width: 7rem;
+  color: white;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moja-desavanja-view .card-img_text {
+  margin: 0;
+  font-size: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.moja-desavanja-view .card-text {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 5px;
+  width: 80%;
+  line-height: 0.5;
+}
+
+.moja-desavanja-view .card-text h3 {
+  font-size: 12px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.moja-desavanja-view .card-text p {
+  font-size: 11px;
+  margin: 5px 0px;
+}
+
+.moja-desavanja-view .card-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.moja-desavanja-view .card-info {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moja-desavanja-view .card-info p {
+  padding: 0px 5px;
+  font-size: 10px;
+}
+/*# sourceMappingURL=moja-desavanja.css.map */
