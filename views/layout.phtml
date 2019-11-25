@@ -7,25 +7,38 @@
 	<link rel="stylesheet" href="styles.css" type="text/css"/>
 	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.3/lib/darkmode-js.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="scripts/mobileCheck.js"></script>
+	<script src="scripts/sidebar.js"></script>
 </head>
 <body>
 	<div class="is-desktop">
 		<div class="navi">
 			<p class="navi_logo"><span class="navi_red-txt">okulturi</span>.me</p>
 			<ul>
-				<li><a href="/home">Home</a></li>
-				<li><a href="">Kultura</a></li>
-				<li><a href="">O nama</a></li>
-				<li><a href="">Novosti</a></li>
-				<li><a href="/login">Log in</a></li>
+				<li><a href="/home"> Home </a></li>
+				<li><a > Kultura </a></li>
+				<li><a href="/login"> Login </a></li>
+				<li><a href="/register"> Registracija </a></li>
 			</ul>
 		</div>
 		<?php $this->controller->renderView();?>
 	</div>
 
 	<div class="is-mobile">
-		<?php $this->controller->renderView();?>
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="/home"> Home </a>
+			<a> Kultura </a>
+			<a href="/login"> Login </a>
+			<a href="/register"> Registracija </a>
+		</div>
+
+		<div id="main">
+			<!-- TODO TOP BAR -->
+			<button class="openbtn" onclick="openNav()">&#9776;</button>
+			<?php $this->controller->renderView();?>
+		</div>
 	</div>
 	
 	<script>
