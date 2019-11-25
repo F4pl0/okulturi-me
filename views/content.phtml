@@ -2,190 +2,26 @@
 <div class="content-view">
     <div class="content-view_sections">
         <div class="content-view_card-div">
+
+            <?php
+            $desavanja = json_decode(DesavanjeModel::getAll());
+            foreach ($desavanja as $desavanje) {
+                $date = getdate( strtotime( $desavanje->Datetime ) );
+            ?>
             <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
+                <div class="card-img">
+                    <h2 class="card-img_text"><?php echo $date['mday'];?> <br> <?php echo $date['month'];?> </h2>
+                </div>
+                <div class="card-text">
+                    <div>
+                        <h3><?php echo $desavanje->Ime;?></h3>
+                        <p><?php echo $desavanje->Opis;?></p>
                     </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-        <div class="content-view_card-div">
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-        <div class="content-view_card-div">
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
-            <div class="card">
-                        <div class="card-img">
-                            <h2 class="card-img_text">16 <br> JUL</h2>
-                        </div>
-                        <div class="card-text">
-                            <div>
-                                <h3>Neki dogadjaj- Super zezanje idk sta jos</h3>
-                                <p>Lokacija eventa - koliko sati</p>
-                            </div>
-                            <div class="card-info">
-                                <p>19:20</p>
-                                <p>169din</p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+
+            <?php } ?>
+
         </div>
     </div>
 </div>
