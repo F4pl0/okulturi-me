@@ -21,7 +21,7 @@ $color-secondary: #c74040;
         color: $color-secondary;
     }
     hr {
-        color: $color-primary;
+        border-top: 1px solid $color-secondary;
         width: 4rem;
         margin: 1.5rem 0;
     }

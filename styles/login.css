@@ -18,39 +18,42 @@
 }
 
 .login-view_body {
+  padding: 4rem 0;
   border: 2 px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.login-view_body-left {
-  padding: 0rem 8rem;
-  width: 50%;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+.login-view_body-heading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
-.login-view_body-right {
-  padding: 0rem 8rem;
-  border-left: 1px solid black;
-  width: 50%;
+.login-view_body-subheading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 .login-view_form {
-  padding: 1rem 6rem;
+  padding: 4rem 6rem;
   border: 1px solid black;
   -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
           box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.login-view_form h3 {
-  font-size: 2rem;
+.login-view_form-button {
+  margin: 2rem 0;
 }
 
 .login-view_form a {
@@ -65,93 +68,5 @@
   color: black;
   border: 1px solid black;
   padding: 2px 2.5rem;
-}
-
-.login-view_events {
-  border: 1px solid black;
-  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
-          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem 1rem;
-}
-
-.login-view_events h3 {
-  margin: 0;
-  font-size: 2rem;
-  padding-bottom: 1rem;
-}
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 95%;
-  height: 5rem;
-  border-radius: 0px 15px 15px 0px;
-  -webkit-box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
-          box-shadow: 4px 5px 6px -1px rgba(128, 128, 128, 0.75);
-}
-
-.card-img {
-  text-align: center;
-  width: 5rem;
-  color: white;
-  background-color: red;
-}
-
-.card-img h2 {
-  font-size: 1.5rem;
-  position: relative;
-  top: 20%;
-}
-
-.card-text {
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0px 5px;
-  width: 80%;
-  line-height: 0.5;
-}
-
-.card-text h3 {
-  font-size: 12px;
-  margin: 10px 0;
-  font-weight: 600;
-}
-
-.card-text p {
-  font-size: 11px;
-  margin: 5px 0px;
-}
-
-.card-info {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.card-info p {
-  padding: 0px 5px;
-  font-size: 10px;
 }
 /*# sourceMappingURL=login.css.map */

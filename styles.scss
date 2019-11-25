@@ -19,7 +19,7 @@ body {
     align-items: baseline;
     justify-content: space-between;
     color: black;
-    span {
+    &_red-txt {
         color: red;
         font-size: 1.5rem;
     }
@@ -28,9 +28,11 @@ body {
     ul {
         display: flex;
         flex-direction: row;
-        li {
+        a {
             padding: 0 1rem;
-            list-style-type: none;
+            font-size: 1rem;
+            color: black;
+            text-decoration: none;
         }
     }
 }

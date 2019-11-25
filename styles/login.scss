@@ -13,27 +13,29 @@
         }
     }
     &_body {
+        padding: 4rem 0;
         border: 2 px solid red;
         display: flex;
-        flex-direction: row;
         width: 100%;
-        &-left {
-            padding: 0rem 8rem;
-            width: 50%;
-            transform: translateY(10%);
+        justify-content: center;
+        align-items: center;
+        &-heading {
+            font-size: 2rem;
+            padding-bottom: 2rem;
         }
-        &-right {
-            padding: 0rem 8rem;
-            border-left: 1px solid black;
-            width: 50%;
+        &-subheading {
+            font-size: 2rem;
+            padding-bottom: 2rem;
         }
     }
     &_form {
-        padding: 1rem 6rem;
+        padding: 4rem 6rem;
         border: 1px solid black;
         box-shadow: 4px 5px 6px -1px rgba(gray, 0.75);
-        h3 {
-            font-size: 2rem;
+        align-self: center;
+
+        &-button {
+            margin: 2rem 0;
         }
 
         a {
@@ -49,69 +51,5 @@
         color: black;
         border: 1px solid black;
         padding: 2px 2.5rem;
-    }
-    //////////////////
-    // Right Div
-    /////////////////
-
-    &_events {
-        border: 1px solid black;
-        box-shadow: 4px 5px 6px -1px rgba(gray, 0.75);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 1rem;
-        h3 {
-            margin: 0;
-            font-size: 2rem;
-            padding-bottom: 1rem;
-        }
-    }
-}
-
-//Card
-
-.card {
-    display: flex;
-    width: 95%;
-    height: 5rem;
-    border-radius: 0px 15px 15px 0px;
-    box-shadow: 4px 5px 6px -1px rgba(gray, 0.75);
-}
-.card-img {
-    text-align: center;
-    width: 5rem;
-    color: white;
-    background-color: red;
-    h2 {
-        font-size: 1.5rem;
-        position: relative;
-        top: 20%;
-    }
-}
-.card-text {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px 5px;
-    width: 80%;
-    line-height: 0.5;
-    h3 {
-        font-size: 12px;
-        margin: 10px 0;
-        font-weight: 600;
-    }
-    p {
-        font-size: 11px;
-        margin: 5px 0px;
-    }
-}
-.card-info {
-    align-self: flex-end;
-    display: flex;
-    p {
-        padding: 0px 5px;
-        font-size: 10px;
     }
 }

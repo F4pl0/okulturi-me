@@ -22,7 +22,7 @@
 }
 
 .home-view hr {
-  color: #ce1919;
+  border-top: 1px solid #c74040;
   width: 4rem;
   margin: 1.5rem 0;
 }
