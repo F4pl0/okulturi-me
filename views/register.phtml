@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="styles/login.css" />
+<script src="scripts/register.js"></script>
 <div class="login-view">
     <div class="login-view_heading">
         <div class="login-view_body">
@@ -6,24 +7,25 @@
                 <div class="login-view_form">
                     <h3 class="login-view_body-heading">Registruj se</h3>
                     <h4 class="login-view_body-subheading">Registrujte se da bi ste videli sva <br>
-                     najnovija desavanja.</h4>
+                    najnovija desavanja.</h4>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Ime i Prezime</label>
+                        <input type="text" id="nameField" class="validate">
+                        <label for="nameField">Ime i Prezime</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Email Adresa</label>
+                        <input type="text" id="emailField" class="validate">
+                        <label for="emailField">Email Adresa</label>
                     </div>
                     <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
-                        <label for="password">Password</label>
+                        <input type="password" id="passwordField" class="validate">
+                        <label for="passwordField">Password</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="password" id="repeatPasswordField" class="validate">
+                        <label for="repeatPasswordField">Confirm Password</label>
                     </div>
                     <div class="login-view_form-button">
-                        <a class="button">REGISTER</a>
-                    </div>
-                    <div>
-                    <a href="/register"> Zelite li da primate nase newsletter mejlove?</a>
+                        <a class="button" type="button" id="registerBtn">REGISTER</a>
                     </div>
                 </div>
             </div>

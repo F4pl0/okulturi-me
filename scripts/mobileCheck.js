@@ -15,22 +15,7 @@ window.mobileAndTabletcheck = function() {
 };
 
 if (window.mobileAndTabletcheck()) {
-    var style = document.createElement('style');
-    style.innerHTML = `
-    .is-desktop{
-        display: none;
-    }
-    *, html, body {
-        font-size: 24px;
-    }
-    `;
-    document.head.appendChild(style);
+    $('.is-desktop').remove();
 } else {
-    var style = document.createElement('style');
-    style.innerHTML = `
-    .is-mobile{
-        display: none;
-    }
-    `;
-    document.head.appendChild(style);
+    $('.is-mobile').remove();
 }
