@@ -1,23 +1,13 @@
 <?php
 if(isset($_SESSION['ID'])){
 
-    if(isset($_POST['ime'])
-    && isset($_POST['opis'])
-    && isset($_FILES['slika'])
-    && isset($_POST['datetime'])
-    && isset($_POST['kategorija'])){
+    if(isset($_POST['id'])){
 
-        if( DesavanjeModel::create(
-                            $_POST['ime'],
-                            $_POST['opis'],
-                            $_FILES['slika'],
-                            $_POST['datetime'],
-                            $_POST['kategorija']
-                            )) {
+        if( DesavanjeModel::delete($_POST['id'])) {
 
             header("HTTP/1.0 200");
             $response['success'] = true;
-            $response['message'] = "Dogadjaj added";
+            $response['message'] = "Dogadjaj deleted";
             echo json_encode($response);
         } else {
             header("HTTP/1.0 500");

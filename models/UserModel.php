@@ -73,8 +73,6 @@ class UserModel
         $pass = md5($pass);
         $sql = "SELECT * FROM users WHERE Email = '$email' and Pass = '$pass'";
 
-        echo $sql;
-
         $result = mysqli_query($db,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
