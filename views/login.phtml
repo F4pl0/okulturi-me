@@ -1,27 +1,28 @@
 <link rel="stylesheet" href="styles/login.css" />
+<script src="scripts/login.js"></script>
 <div class="login-view">
     <div class="login-view_heading">
         <h2>Welcome Back!</h2>
         <p>Ulogujte se da bi ste videli sva najnovija desavanja.</p>
         <div class="login-view_body">
-          <!--  Left Div   -->
-          <form action="">
+            <!--  Left Div   -->
+            <form action="">
                 <div class="login-view_form">
                     <h3 class="login-view_body-heading">Uloguj se</h3>
                     <div class="input-field">
-                        <input id="last_name" type="text" class="validate">
-                        <label for="last_name">Email Adresa</label>
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Email Adresa</label>
                     </div>
                     <div class="input-field">
                         <input id="password" type="password" class="validate">
                         <label for="password">Password</label>
                     </div>
                     <div class="login-view_form-button">
-                        <a href="#"class="button">LOG IN</a>
+                        <a id="loginBtn" class="button">LOG IN</a>
                     </div>
                     <a href="/register"> Nemate svoj profil? Registrujte se!</a>
-                  </div>
-                </form>
+                </div>
+            </form>
         </div>
     </div>
 </div>
